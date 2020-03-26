@@ -26,3 +26,17 @@
 5. [JVM tuning](#jvm-tuning)
    * [How to specify the amount of memory used by a service](#how-to-specify-the-amount-of-memory-used-by-a-service)
    * [How to enable a remote JMX connection to a service](#how-to-enable-a-remote-jmx-connection-to-a-service)
+
+## Usage
+
+### Bringing up the stack
+
+Clone this repository onto the Docker host that will run the stack, then start services locally using Docker Compose:
+
+```console
+$ docker-compose up
+```
+
+You can also run all services in the background (detached mode) by adding the `-d` flag to the above command.
+
+> :warning: You must run `docker-compose build` first whenever you switch branch or update a base image.
